@@ -1,0 +1,34 @@
+# Compiled files
+*.vcd
+*.vvp
+*.vpi
+*.vout
+*.sdf
+*.sim
+*.key
+
+# Synthesis tool generated files
+*.mr
+*.log
+*.rpt
+
+# Simulation tool generated files
+*.vpd
+*.shm
+*.mti
+# 忽略 simulation/modelsim/msim_transcript 文件
+ simulation/modelsim/msim_transcript
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Generated Verilog modules
+generated/
+
+# Temporary files
+*.bak
+*.swp
+*~
