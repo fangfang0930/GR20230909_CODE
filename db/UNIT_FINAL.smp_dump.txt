@@ -1,0 +1,12 @@
+
+State Machine - |UNIT_FINAL|pwm_up:pwm_up|send:send|cs
+Name cs.00 cs.10 cs.01 
+cs.01 0 0 0 
+cs.00 1 0 1 
+cs.10 0 1 1 
+
+State Machine - |UNIT_FINAL|pwm_down:pwm_down|down_deal:down_deal|cs
+Name cs.00 cs.10 cs.01 
+cs.00 0 0 0 
+cs.01 1 0 1 
+cs.10 1 1 0 

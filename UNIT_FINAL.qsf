@@ -1,0 +1,118 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 132 02/25/2009 SJ Full Version
+# Date created = 09:43:31  January 12, 2010
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		UNIT_FINAL_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM1270T144I5
+set_global_assignment -name TOP_LEVEL_ENTITY UNIT_FINAL
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:43:31  JANUARY 12, 2010"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name AUTO_RESTART_CONFIGURATION OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name FMAX_REQUIREMENT "40 MHz" -section_id clk
+set_instance_assignment -name CLOCK_SETTINGS clk -to clk
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_40 -to LED1
+set_location_assignment PIN_41 -to LED2
+set_location_assignment PIN_42 -to LED3
+set_location_assignment PIN_43 -to LED4
+set_location_assignment PIN_44 -to LED5
+set_location_assignment PIN_45 -to LED6
+set_location_assignment PIN_48 -to LED7
+set_location_assignment PIN_49 -to LED8
+set_location_assignment PIN_50 -to LED9
+set_location_assignment PIN_51 -to LED10
+set_location_assignment PIN_113 -to K_1
+set_location_assignment PIN_109 -to K_2
+set_location_assignment PIN_122 -to K_3
+set_location_assignment PIN_118 -to K_4
+set_location_assignment PIN_18 -to clk
+set_location_assignment PIN_1 -to col1
+set_location_assignment PIN_2 -to col2
+set_location_assignment PIN_3 -to col3
+set_location_assignment PIN_4 -to col4
+set_location_assignment PIN_88 -to cs_n
+set_location_assignment PIN_68 -to db
+set_location_assignment PIN_66 -to ov
+set_location_assignment PIN_72 -to TEM
+set_location_assignment PIN_91 -to ad_in
+set_location_assignment PIN_94 -to adclk
+set_location_assignment PIN_38 -to sent
+set_location_assignment PIN_137 -to tr1
+set_location_assignment PIN_138 -to tr2
+set_location_assignment PIN_139 -to tr3
+set_location_assignment PIN_140 -to tr4
+set_location_assignment PIN_70 -to uv
+set_location_assignment PIN_37 -to rcvd
+set_location_assignment PIN_125 -to K_5
+set_global_assignment -name DA_CUSTOM_RULE_FILE "D:/STUDY/chenhui_tanliang/7820H182_111020_1/db/UNIT_FINAL.cbx.xml"
+set_global_assignment -name VERILOG_FILE tb_pwm.v
+set_global_assignment -name VERILOG_FILE rect_up.v
+set_global_assignment -name VERILOG_FILE ad.v
+set_global_assignment -name VERILOG_FILE rcvr.v
+set_global_assignment -name VERILOG_FILE down_deal.v
+set_global_assignment -name VERILOG_FILE PWM.v
+set_global_assignment -name VERILOG_FILE pwm_down.v
+set_global_assignment -name VERILOG_FILE UNIT_FINAL.v
+set_global_assignment -name VERILOG_FILE pwm_up.v
+set_global_assignment -name VERILOG_FILE sign_deal.v
+set_global_assignment -name VERILOG_FILE up_sign.v
+set_global_assignment -name VERILOG_FILE send.v
+set_global_assignment -name VERILOG_FILE rect_down.v
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_unit_final -section_id eda_simulation
+set_global_assignment -name SIGNALTAP_FILE stp3.stp
+set_global_assignment -name SIGNALTAP_FILE stp5.stp
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_unit_final -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_unit_final
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 us" -section_id tb_unit_final
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_unit_final.v -section_id tb_unit_final
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_pwm.v -section_id tb_unit_final
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_unit_final.v -section_id tb_unit_final
