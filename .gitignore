@@ -13,11 +13,26 @@
 *.rpt
 
 # Simulation tool generated files
-*.vpd
-*.shm
 *.mti
+*.dat
+*.dbs
+*.psm
+*.bak
+*.cmp
+*.jpg
+*.html
+*.bsf
 # 忽略 simulation/modelsim/msim_transcript 文件
  simulation/modelsim/msim_transcript
+# ignore simulation output of ModelSim
+wlf*
+*.wlf
+*.vstf
+*.ucdb
+cov*/
+transcript*
+sc_dpiheader.h
+vsim.dbg
 
 # IDE and editor files
 .vscode/
